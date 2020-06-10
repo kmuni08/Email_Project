@@ -15,8 +15,6 @@
 #include "Vec.hpp"
 #include "Message.hpp"
 #include "BaseFolder.hpp"
-#include "Inbox.hpp"
-#include "Outbox.hpp"
 #include "Drafts.hpp"
 #include "EmailAccount.hpp"
 #include "ISP.hpp"
@@ -28,8 +26,6 @@ template<class T> class Vec;
 class Message;
 class Name;
 class BaseFolder;
-class Inbox;
-class Outbox;
 class Drafts;
 class EmailAccount;
 class ISP;

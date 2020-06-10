@@ -60,4 +60,26 @@ protected:
     }
 };
 
+// Inbox class
+class Inbox : public BaseFolder {
+public:
+    Inbox(EmailAccount *ac) : BaseFolder(ac) { };               //public constructor
+    
+protected:
+    //inline definition
+    virtual string type() const { return "inbox"; }
+    virtual const Name& tofrom(const Message *m) const {return m->from(); }
+};
+
+// Outbox class
+class Outbox : public BaseFolder {
+public:
+    Outbox(EmailAccount *ac) : BaseFolder(ac) { };
+    
+protected:
+    //inline definition
+    virtual string type() const {return "outbox"; }
+    virtual const Name& tofrom(const Message *m) const {return m->to(); }
+};
+
 #endif /* BaseFolder_hpp */

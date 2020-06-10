@@ -7,6 +7,7 @@
 //
 
 #include "EmailAccount.hpp"
+#include "ISP.hpp"
 
 //class EmailAccount method definitions.
 EmailAccount:: EmailAccount(string s) {

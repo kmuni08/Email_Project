@@ -19,9 +19,6 @@
 #include "Message.hpp"
 #include "Drafts.hpp"
 #include "BaseFolder.hpp"
-#include "ISP.hpp"
-#include "Inbox.hpp"
-#include "Outbox.hpp"
 
 using namespace std;
 
@@ -30,8 +27,6 @@ class Drafts;
 class ISP;
 class Message;
 class Name;
-class Inbox;
-class Outbox;
 
 class EmailAccount {
 public:

@@ -19,6 +19,8 @@
 
 using namespace std;
 
+class Name;
+
 class Message {
     
 public:
