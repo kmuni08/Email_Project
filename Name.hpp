@@ -32,5 +32,13 @@ private:
     string _address;
 };
 
+//operators for comparing address of n1 and n2.
+bool operator == (const Name& n1, const Name& n2) {
+    return n1.address() == n2.address();
+}
+
+bool operator < (const Name& n1, const Name& n2) {
+    return n1.address() < n2.address();
+}
 
 #endif /* Name_hpp */

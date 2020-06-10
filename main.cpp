@@ -35,19 +35,6 @@ class EmailAccount;
 class ISP;
 
 
-//static variable initialization outside of the ISP class.
-map<Name, EmailAccount*> ISP:: _accounts;
-
-
-//operators for comparing address of n1 and n2.
-bool operator == (const Name& n1, const Name& n2) {
-    return n1.address() == n2.address();
-}
-
-bool operator < (const Name& n1, const Name& n2) {
-    return n1.address() < n2.address();
-}
-
 
 int main() {
     

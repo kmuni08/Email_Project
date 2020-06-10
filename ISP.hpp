@@ -16,7 +16,14 @@
 #include <chrono>
 #include <ctime>
 #include "Message.hpp"
+#include "Name.hpp"
 #include "EmailAccount.hpp"
+#include "Vec.hpp"
+
+template<class T> class Vec;
+class EmailAccount;
+class Message;
+class Name;
 
 class ISP {
 public:

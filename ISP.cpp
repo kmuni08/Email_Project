@@ -8,6 +8,9 @@
 
 #include "ISP.hpp"
 
+//static variable initialization outside of the ISP class.
+map<Name, EmailAccount*> ISP:: _accounts;
+
 //class ISP mesthod definition.
 void ISP :: send(Message *m) {
     EmailAccount *ac;
